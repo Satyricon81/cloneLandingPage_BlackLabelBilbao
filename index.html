@@ -1,126 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./app.css">
-    <title>Black Label Pablo</title>
+    <title>Black Label Pablo 2</title>
 </head>
-<body>
-    
-    <nav class="navbar navbar-expand-md bg-transparent fixed-top">
-        <div class="container-fluid">
-            <div class="navbar menu" id="navbarNav">
-                <div class="blognav">
-                    <a class="nav-link" href="https://www.facebook.com/blacklabelbilbao/?view_public_for=1136786816407351" target="_blank">Facebook</a>
-                    <a class="nav-link" href="https://www.instagram.com/blacklabelbilbao/" target="_blank">Instagram</a>
-                    <a class="nav-link" href="/contacto/">Contacto</a>
-                </div>
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="./index.html">INICIO</a>
-                    <a href="#">BURGUER MENU</a>
-                    <a href="https://www.facebook.com/blacklabelbilbao/?view_public_for=1136786816407351">FACEBOOK</a>
-                    <a href="https://www.instagram.com/blacklabelbilbao">INSTAGRAM</a>
-                    <a href="#">CONTACTO</a>
-                </div>
-                <span class="span" style="font-size:50px;cursor:pointer;" onclick="openNav()">
-                    <hr class="hr">
-                    <hr class="hr">  
-                    <hr class="hr"> 
-                </span>
-                <div class="socialnav">
-                    <a href="" target="_blank" class="asocial">
-                        <img src="./assets/whatsapp.png" alt="" style="width: 50px; height: 50px; margin-right: 1em;">
-                        PEDIDOS POR WHATSAPP
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
 
-    <section>
-        <div class="col-12 above">
-            <div class="row row1 justify-content-center align-content-center">
-                <img src="./assets/logo.png" alt="" class="py-2" style="width: 30rem;">
-                <p class="text-center">En Black Label elaboramos hamburguesas a mano, empleando solamente los cortes nobles de la carne, especias e <br> ingredientes de primera línea. Fusionamos Real Food con Fast Food.</p>
-                <p class="text-center fw-bold">Sin sulfitos, harinas ni trampas.</p>
-                <img src="./assets/firma.png" alt="" style="width: 12rem;">
+<body>
+
+    <header class="header">
+        <nav class="navbar__menu">
+            <div class="navbar__order">
+                <img class="navbar__order-icon" src="./assets/whatsapp.png" alt="whatsapp">
+                <a class="navbar__order-info" href="">PEDIDOS POR WHATSAPP</a>
             </div>
-        </div>
-    </section>
-    
-    <div class="container-fluid container2">
-        <div class="col-12">
-            <div class="row">
-                <h1 class="hash1">#BLACKLABELBILBAO</h1>
+
+            <div class="menu__big">
+                <ul class="menu__big-links">
+                    <li class="menu__big-link"><a href="">Facebook</a></li>
+                    <li class="menu__big-link"><a href="">Instagram</a></li>
+                    <li class="menu__big-link"><a href="">Contacto</a></li>
+                </ul>
             </div>
-        </div>
-    </div>
-    
-    <div class="container-fluid my-5 py-3">
-        <div class="col-12">
-            <div class="row row3">
-                <img src="./assets/index2.jpg" alt="" style="width: 29rem;">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="navbar__links">
+                    <li class="navbar__link"><a href="">Inicio</a></li>
+                    <li class="navbar__link"><a href="">Burguer Menu</a></li>
+                    <li class="navbar__link"><a href="">Facebook</a></li>
+                    <li class="navbar__link"><a href="">Instagram</a></li>
+                    <li class="navbar__link"><a href="">Contacto</a></li>
+                </ul>
             </div>
-            <div class="row row4 my-3">
-                <p>Introducimos recetas complejas y de máxima calidad en el formato más sencillo de cocinar, en apenas un par minutos.</p>
+            
+            <div class="navbar__icon navbar__id" id="navbar__id" onscroll="scrollNav()">
+                <img src="./assets/logo.png" alt="logo" id="myImg" class="navbar__logo slide__up">
+                <div onclick="openNav()" class="hr__content">
+                    <hr class="hr">
+                    <hr class="hr">
+                    <hr class="hr">
+                </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="container-fluid container3">
-        <img src="./assets/index4.jpg" alt="">
-        <p class="row5">Nuestro proceso de elaboración es sencillo pero laborioso.</p>
-    </div>
-    
-    <div class="container-fluid" style="position: relative;">
-        <div class="row">
-            <div class="col-12 col-md-6 grid1">
+
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="home__section">
+            <div class="home__container">
+                <img src="./assets/logo.png" alt="logo" class="home__section-logo">
+                <p class="home__section-info">En Black Label elaboramos hamburguesas a mano, empleando solamente los
+                    cortes nobles de la carne, especias e ingredientes de primera línea. Fusionamos Real Food con Fast
+                    Food.</p>
+                <p class="home__section-info2">Sin sulfitos, harinas ni trampas.</p>
+                <img src="./assets/firma.png" alt="firma" class="home__section-signature">
             </div>
-            <div class="col-12 col-md-6 grid2">
-                <h1 class="grid2text1">#BESPOKEBURGERS</h1>
-                <p class="grid2text2">Hamburguesas personalizadas: cubrimos cualquier necesidad o deseo. Si sigues alguna dieta médica, deportiva, o quieres que llevemos a cabo alguna receta para ti, no tienes más que pedírnoslo. También distribuimos a locales de referencia hostelera en el País Vasco, elaborando el producto a medida para cada uno de ellos.</p>
+        </section>
+
+        <section class="above__section">
+            <div class="above__container">
+                <p class="above__info">#BLACKLABELBILBAO</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-6 grid3">
-                <h1 class="grid3text1">#TRAVELBURGERS</h1>
-                <p class="grid3text2">Mezclando carnes de aquí, con especias e ingredientes recopilados de todos los rincones del mundo, conseguimos que un bocado sea capaz de hacernos viajar.</p>
+        </section>
+
+        <section class="story__section">
+            <div class="story__container">
+                <img src="./assets/index2.jpg" alt="mikel" class="mikel__img">
+                <p class="story__info">Introducimos recetas complejas y de máxima calidad en el formato más sencillo de
+                    cocinar, en apenas un par minutos.</p>
+                <img src="./assets/index4.jpg" alt="pack" class="pack__img">
+                <p class="story__info">Nuestro proceso de elaboración es sencillo pero laborioso.</p>
             </div>
-            <div class="col-12 col-md-6 grid4">
+        </section>
+
+        <section class="burger__section">
+            <div class="burger__container">
+                <img src="./assets/index5.jpg" alt="burguer1" class="burguer__img-1">
+                <div class="burguer__info">
+                    <h2>#BESPOKEBURGERS</h2>
+                    <p>Hamburguesas personalizadas: cubrimos cualquier necesidad o deseo. Si sigues alguna dieta
+                        médica,deportiva, o quieres que llevemos a cabo alguna receta para ti, no tienes más que
+                        pedírnoslo. También distribuimos a locales de referencia hostelera en el País Vasco, elaborando
+                        el producto a medida para cada uno de ellos.</p>
+                </div>
             </div>
-        </div>
-        <div class="map">
-            <img src="./assets/map.png" alt="">
-        </div>
-    </div>
-    
-    <div class="container-fluid containercatalogo my-4 py-4">
-        <div class="col-12 boxcatalogo">
-            <h1 class="catalogo">#Catálogo</h1>
-            <p class="catalogop">Elaboramos de manera continua en pequeñas cantidades, por lo que nos es imposible ofreceros un catálogo exacto de lo que encontraréis en nuestras tiendas; dependiendo del día y la hora nuestro mostrador cambia de forma dinámica. Actualmente tenemos más de cincuenta recetas desarrolladas. De ellas, diariamente elaboramos entre diez y quince, manteniendo un repertorio lo más variado posible. Por ello, nuestra tienda online se adapta a esta peculiaridad: Pulsa el botón whatsapp para contactarnos, te enviamos fotos del mostrador actual, haces tu pedido como si estuvieras en la tienda y eliges si pasar a recogerlo o que te lo enviemos a casa.</p>
-        </div>
-    </div>
-    
-    <div class="container-fluid containerpedido">
-        <div class="col-12 boxpedido">
-            <img src="./assets/whatsapp.png" alt="" style="width: 8em;">
-            <div class="row rowpedido">
-                <h2 class="h2">#hazmetupedido</h2>
-                <p class="pPedido">Para realizar tu pedido no tienes más que llamarnos o enviarnos un mensaje. Te facilitaremos un listado o fotografía de las hamburguesas que tenemos en ese momento, eliges como si estuvieses en la tienda y en un rato te las enviamos.</p>
-                <a href="#" class="aPedido">SOLICITAR PEDIDO</a>
+            <div class="burger__container">
+                <img src="./assets/index6.jpg" alt="burguer2" class="burguer__img-2">
+                <div class="burguer__info">
+                    <h2>#TRAVELBURGERS</h2>
+                    <p>Mezclando carnes de aquí, con especias e ingredientes recopilados de todos los rincones del
+                        mundo, conseguimos que un bocado sea capaz de hacernos viajar.</p>
+                </div>
             </div>
-        </div>
-    </div>
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/637ee434dc.js" crossorigin="anonymous"></script>
+
+            <div class="map__image">
+                <img src="./assets/map.png" alt="">
+            </div>
+        </section>
+
+        <section class="catalogo__section">
+            <div class="catalogo__container">
+                <img src="./assets/index7.jpg" alt="catalogo" class="catalogo__img">
+                <div class="catalogo__info">
+                    <h2 class="catalogo__title">#Catálogo</h2>
+                    <p class="catalogo__subtitle">Elaboramos de manera continua en pequeñas cantidades, por lo que nos
+                        es imposible ofreceros un catálogo exacto de lo que encontraréis en nuestras tiendas;
+                        dependiendo del día y la hora nuestro mostrador cambia de forma dinámica. Actualmente tenemos
+                        más de cincuenta recetas desarrolladas. De ellas, diariamente elaboramos entre diez y quince,
+                        manteniendo un repertorio lo más variado posible. Por ello, nuestra tienda online se adapta a
+                        esta peculiaridad: Pulsa el botón whatsapp para contactarnos, te enviamos fotos del mostrador
+                        actual, haces tu pedido como si estuvieras en la tienda y eliges si pasar a recogerlo o que te
+                        lo enviemos a casa.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pedido__section">
+            <div class="pedido__container">
+                <div class="pedido__info">
+                    <img src="./assets/whatsapp.png" alt="logo-whatsapp">
+                    <h2>#hazmetupedido</h2>
+                    <p>Para realizar tu pedido no tienes más que llamarnos o enviarnos un mensaje. Te facilitaremos un
+                        listado o fotografía de las hamburguesas que tenemos en ese momento, eliges como si estuvieses
+                        en la tienda y en un rato te las enviamos.</p>
+                    <a href="">SOLICITAR PEDIDO</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
     <script src="./app.js"></script>
 </body>
+
 </html>
