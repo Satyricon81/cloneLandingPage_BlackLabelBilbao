@@ -1,144 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./app.css">
-    <title>Black Label Pablo 2</title>
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./app.css" />
+    <title>Black Label Pablo</title>
 </head>
 
 <body>
-
+    <!-- ===== NAVBAR ===== -->
     <header class="header">
-        <nav class="navbar__menu">
+        <nav class="navbar__menu navbar__responsive" id="navbar__responsive">
             <div class="navbar__order">
-                <img class="navbar__order-icon" src="./assets/whatsapp.png" alt="whatsapp">
-                <a class="navbar__order-info" href="">PEDIDOS POR WHATSAPP</a>
+                <img loading="lazy" class="navbar__order-icon" src="./assets/whatsapp.png" title="whatsapp"
+                    alt="whatsapp" />
+                <a class="navbar__order-info" target="_blank" href="https://www.blacklabelbilbao.com/">PEDIDOS POR
+                    WHATSAPP</a>
             </div>
 
             <div class="menu__big">
                 <ul class="menu__big-links">
-                    <li class="menu__big-link"><a href="">Facebook</a></li>
-                    <li class="menu__big-link"><a href="">Instagram</a></li>
-                    <li class="menu__big-link"><a href="">Contacto</a></li>
+                    <li class="menu__big-link">
+                        <a target="_blank" href="https://es-es.facebook.com/blacklabelbilbao/">Facebook</a>
+                    </li>
+                    <li class="menu__big-link">
+                        <a target="_blank" href="https://www.instagram.com/blacklabelbilbao/?hl=es">Instagram</a>
+                    </li>
                 </ul>
             </div>
 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <ul class="navbar__links">
-                    <li class="navbar__link"><a href="">Inicio</a></li>
-                    <li class="navbar__link"><a href="">Burguer Menu</a></li>
-                    <li class="navbar__link"><a href="">Facebook</a></li>
-                    <li class="navbar__link"><a href="">Instagram</a></li>
-                    <li class="navbar__link"><a href="">Contacto</a></li>
+                    <li class="navbar__link"><a target="_blank" href="">Inicio</a></li>
+                    <li class="navbar__link">
+                        <a target="_blank" href="">Burguer Menu</a>
+                    </li>
+                    <li class="navbar__link">
+                        <a target="_blank" href="https://es-es.facebook.com/blacklabelbilbao/">Facebook</a>
+                    </li>
+                    <li class="navbar__link">
+                        <a target="_blank" href="https://www.instagram.com/blacklabelbilbao/?hl=es">Instagram</a>
+                    </li>
                 </ul>
             </div>
-            
+
             <div class="navbar__icon navbar__id" id="navbar__id" onscroll="scrollNav()">
-                <img src="./assets/logo.png" alt="logo" id="myImg" class="navbar__logo slide__up">
+                <img loading="lazy" src="./assets/logo.png" title="logo" alt="logo" id="myImg"
+                    class="navbar__logo slide__up" />
                 <div onclick="openNav()" class="hr__content">
-                    <hr class="hr">
-                    <hr class="hr">
-                    <hr class="hr">
+                    <hr class="hr" />
+                    <hr class="hr" />
+                    <hr class="hr" />
                 </div>
             </div>
-
         </nav>
     </header>
 
     <main class="main">
-
+        <!-- ===== HOME ===== -->
         <section class="home__section">
             <div class="home__container">
-                <img src="./assets/logo.png" alt="logo" class="home__section-logo">
-                <p class="home__section-info">En Black Label elaboramos hamburguesas a mano, empleando solamente los
-                    cortes nobles de la carne, especias e ingredientes de primera línea. Fusionamos Real Food con Fast
-                    Food.</p>
+                <img loading="lazy" src="./assets/logo.png" title="logo" alt="logo" class="home__section-logo" />
+                <p class="home__section-info">
+                    En Black Label elaboramos hamburguesas a mano, empleando solamente
+                    los cortes nobles de la carne, especias e ingredientes de primera
+                    línea. Fusionamos Real Food con Fast Food.
+                </p>
                 <p class="home__section-info2">Sin sulfitos, harinas ni trampas.</p>
-                <img src="./assets/firma.png" alt="firma" class="home__section-signature">
+                <img loading="lazy" src="./assets/firma.png" title="signature" alt="signature"
+                    class="home__section-signature" />
             </div>
         </section>
 
+        <!-- ===== ABOVE ===== -->
         <section class="above__section">
             <div class="above__container">
-                <p class="above__info">#BLACKLABELBILBAO</p>
+                <h2 class="above__info">#BLACKLABELBILBAO</h2>
             </div>
         </section>
 
+        <!-- ===== STORY ===== -->
         <section class="story__section">
             <div class="story__container">
-                <img src="./assets/index2.jpg" alt="mikel" class="mikel__img">
-                <p class="story__info">Introducimos recetas complejas y de máxima calidad en el formato más sencillo de
-                    cocinar, en apenas un par minutos.</p>
-                <img src="./assets/index4.jpg" alt="pack" class="pack__img">
-                <p class="story__info">Nuestro proceso de elaboración es sencillo pero laborioso.</p>
+                <img loading="lazy" src="./assets/index2.jpg" title="mikel" alt="mikel" class="mikel__img" />
+                <p class="story__info">
+                    Introducimos recetas complejas y de máxima calidad en el formato más
+                    sencillo de cocinar, en apenas un par minutos.
+                </p>
+                <img loading="lazy" src="./assets/index4.jpg" title="pack" alt="pack" class="pack__img" />
+                <p class="story__info">
+                    Nuestro proceso de elaboración es sencillo pero laborioso.
+                </p>
             </div>
         </section>
 
+        <!-- ===== BURGUER ===== -->
         <section class="burger__section">
             <div class="burger__container">
-                <img src="./assets/index5.jpg" alt="burguer1" class="burguer__img-1">
+                <img loading="lazy" src="./assets/index5.jpg" title="burger1" alt="burguer1" class="burguer__img-1" />
                 <div class="burguer__info">
                     <h2>#BESPOKEBURGERS</h2>
-                    <p>Hamburguesas personalizadas: cubrimos cualquier necesidad o deseo. Si sigues alguna dieta
-                        médica,deportiva, o quieres que llevemos a cabo alguna receta para ti, no tienes más que
-                        pedírnoslo. También distribuimos a locales de referencia hostelera en el País Vasco, elaborando
-                        el producto a medida para cada uno de ellos.</p>
+                    <p>
+                        Hamburguesas personalizadas: cubrimos cualquier necesidad o deseo.
+                        Si sigues alguna dieta médica,deportiva, o quieres que llevemos a
+                        cabo alguna receta para ti, no tienes más que pedírnoslo. También
+                        distribuimos a locales de referencia hostelera en el País Vasco,
+                        elaborando el producto a medida para cada uno de ellos.
+                    </p>
                 </div>
             </div>
             <div class="burger__container">
-                <img src="./assets/index6.jpg" alt="burguer2" class="burguer__img-2">
+                <img loading="lazy" src="./assets/index6.jpg" title="burguer2" alt="burguer2" class="burguer__img-2" />
                 <div class="burguer__info">
                     <h2>#TRAVELBURGERS</h2>
-                    <p>Mezclando carnes de aquí, con especias e ingredientes recopilados de todos los rincones del
-                        mundo, conseguimos que un bocado sea capaz de hacernos viajar.</p>
+                    <p>
+                        Mezclando carnes de aquí, con especias e ingredientes recopilados
+                        de todos los rincones del mundo, conseguimos que un bocado sea
+                        capaz de hacernos viajar.
+                    </p>
                 </div>
             </div>
 
             <div class="map__image">
-                <img src="./assets/map.png" alt="">
+                <img loading="lazy" src="./assets/map.png" title="map" alt="map" />
             </div>
         </section>
 
+        <!-- ===== CATALOGO ===== -->
         <section class="catalogo__section">
             <div class="catalogo__container">
-                <img src="./assets/index7.jpg" alt="catalogo" class="catalogo__img">
+                <img loading="lazy" src="./assets/index7.jpg" title="catalogo" alt="catalogo" class="catalogo__img" />
                 <div class="catalogo__info">
                     <h2 class="catalogo__title">#Catálogo</h2>
-                    <p class="catalogo__subtitle">Elaboramos de manera continua en pequeñas cantidades, por lo que nos
-                        es imposible ofreceros un catálogo exacto de lo que encontraréis en nuestras tiendas;
-                        dependiendo del día y la hora nuestro mostrador cambia de forma dinámica. Actualmente tenemos
-                        más de cincuenta recetas desarrolladas. De ellas, diariamente elaboramos entre diez y quince,
-                        manteniendo un repertorio lo más variado posible. Por ello, nuestra tienda online se adapta a
-                        esta peculiaridad: Pulsa el botón whatsapp para contactarnos, te enviamos fotos del mostrador
-                        actual, haces tu pedido como si estuvieras en la tienda y eliges si pasar a recogerlo o que te
-                        lo enviemos a casa.</p>
+                    <p class="catalogo__subtitle">
+                        Elaboramos de manera continua en pequeñas cantidades, por lo que
+                        nos es imposible ofreceros un catálogo exacto de lo que
+                        encontraréis en nuestras tiendas; dependiendo del día y la hora
+                        nuestro mostrador cambia de forma dinámica. Actualmente tenemos
+                        más de cincuenta recetas desarrolladas. De ellas, diariamente
+                        elaboramos entre diez y quince, manteniendo un repertorio lo más
+                        variado posible. Por ello, nuestra tienda online se adapta a esta
+                        peculiaridad: Pulsa el botón whatsapp para contactarnos, te
+                        enviamos fotos del mostrador actual, haces tu pedido como si
+                        estuvieras en la tienda y eliges si pasar a recogerlo o que te lo
+                        enviemos a casa.
+                    </p>
                 </div>
             </div>
         </section>
 
+        <!-- ===== PEDIDO ===== -->
         <section class="pedido__section">
             <div class="pedido__container">
                 <div class="pedido__info">
-                    <img src="./assets/whatsapp.png" alt="logo-whatsapp">
+                    <img loading="lazy" src="./assets/whatsapp.png" title="whatsapp" alt="whatsapp" />
                     <h2>#hazmetupedido</h2>
-                    <p>Para realizar tu pedido no tienes más que llamarnos o enviarnos un mensaje. Te facilitaremos un
-                        listado o fotografía de las hamburguesas que tenemos en ese momento, eliges como si estuvieses
-                        en la tienda y en un rato te las enviamos.</p>
-                    <a href="">SOLICITAR PEDIDO</a>
+                    <p>
+                        Para realizar tu pedido no tienes más que llamarnos o enviarnos un
+                        mensaje. Te facilitaremos un listado o fotografía de las
+                        hamburguesas que tenemos en ese momento, eliges como si estuvieses
+                        en la tienda y en un rato te las enviamos.
+                    </p>
+                    <a href="https://www.blacklabelbilbao.com/">SOLICITAR PEDIDO</a>
                 </div>
             </div>
         </section>
-
     </main>
-
 
     <script src="./app.js"></script>
 </body>

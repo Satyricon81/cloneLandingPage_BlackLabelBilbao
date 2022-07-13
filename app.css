@@ -47,9 +47,14 @@ img {
     justify-content: center;
 }
 
+.navbar__order:hover {
+    background-color: transparent;
+}
+
 .navbar__order-icon {
     width: 3em;
     padding: 0;
+    cursor: pointer;
 }
 
 .navbar__order-info {
@@ -62,12 +67,16 @@ img {
     display: none;
 }
 
+.menu__big-link a:hover {
+    color: rgb(22, 240, 117);
+}
+
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
     top: 0;
-    padding-top: 10em;
+    padding-top: 15em;
     background-color: black;
     overflow-x: hidden;
     transition: 0.5s;
@@ -98,18 +107,22 @@ img {
     color: white;
 }
 
+.navbar__link a:hover {
+    color: rgb(22, 240, 117);
+}
+
 .navbar__icon {
     height: 4em;
     padding-top: 0.3em;
     display: block;
-    cursor: pointer;
 }
 
 .navbar__id {
     height: 8em;
-    padding-top: 0.3em;
+    padding-top: 0.5em;
     display: block;
     text-align: center;
+    background-color: black;
 }
 
 .navbar__logo {
@@ -118,24 +131,26 @@ img {
     padding-bottom: 0.5em;
     object-fit: cover;
     display: none;
+
 }
 
 .slide__up {
     width: 150px;
-    padding-top: 1em;
+    padding-top: 0.5em;
     padding-bottom: 0.5em;
     object-fit: cover;
+
 }
 
 .hr__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    cursor: pointer;
 }
 
 .hr {
-    width: 15%;
+    width: 20%;
     border: 2px solid rgb(255, 254, 254);
     margin: 0.3em;
 }
@@ -143,7 +158,8 @@ img {
 /*===== HOME =====*/
 .home__section {
     background-color: black;
-    padding: 12em 3.5em 10em 3.5em;
+    height: 100vh;
+    padding: 12em 3.5em 8em 3.5em;
 }
 
 .home__container {
@@ -236,7 +252,6 @@ img {
     width: 100%;
     background-color: black;
     color: white;
-    margin-bottom: 2em;
 }
 
 .burguer__img-1 {
@@ -280,6 +295,7 @@ img {
     position: relative;
     width: auto;
     height: 120vh;
+    margin-top: 2em;
     margin-bottom: 2em;
 }
 
@@ -319,7 +335,7 @@ img {
 /*===== PEDIDO =====*/
 .pedido__container {
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     background-image: url(./assets/index8.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -329,7 +345,7 @@ img {
 
 .pedido__info {
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     position: absolute;
     background-color: rgba(0, 0, 0, .6);
     display: block;
@@ -339,16 +355,16 @@ img {
 }
 
 .pedido__container img {
-    width: 7em;
+    width: 6em;
     margin-top: 6em;
-    margin-left: 7em;
+    margin-left: 12em;
     margin-bottom: 0.25em;
 }
 
 .pedido__container h2 {
     color: white;
     text-align: left;
-    font-size: 2em;
+    font-size: 1.8em;
     padding-left: 0.5em;
     padding-bottom: 0.5em;
 }
@@ -368,16 +384,50 @@ img {
     padding-left: 1em;
     color: rgb(22, 240, 117);
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.25em;
+}
+
+.pedido__container a:hover {
+    color: white;
+    cursor: pointer;
 }
 
 
 @media screen and (min-width : 768px) {
+
+    .slide__up {
+        width: 150px;
+        padding-top: 0;
+        object-fit: cover;
+    }
+
     .navbar__menu {
         display: flex;
         justify-content: space-between;
         margin: 0;
         height: 5em;
+    }
+
+    .navbar__responsive {
+        display: flex;
+        justify-content: space-between;
+        height: 8em;
+        background-color: black;
+    }
+
+    .navbar__icon {
+        width: 45%;
+        padding-top: 1.5em;
+        padding-right: 4.5em;
+        height: 5em;
+    }
+
+    .navbar__order {
+        order: 1;
+        width: 25%;
+        height: 100%;
+        padding: 2em;
+        text-align: center;
     }
 
     .menu__big {
@@ -396,24 +446,28 @@ img {
         color: white;
     }
 
-    .navbar__icon {
-        width: 45%;
-        padding-top: 1.5em;
-        padding-right: 5em;
-        cursor: pointer;
-        height: 100%;
+    .home__section-logo {
+        height: 130px;
+        margin-top: 4em;
+        margin-bottom: 1.5em;
     }
 
-    .navbar__order {
-        order: 1;
-        width: 25%;
-        height: 100%;
-        padding: 2em;
+    .home__section-info {
+        width: 80%;
         text-align: center;
+        line-height: 1.5em;
+        font-size: 20px;
+        margin-bottom: 1.5em;
     }
 
-    .slide__up {
-        display: none;
+    .home__section-info2 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 2em;
+    }
+
+    .home__section-signature {
+        width: auto;
     }
 
     .above__container {
@@ -425,8 +479,8 @@ img {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3em;
+        transform: translate(-55%, -50%);
+        font-size: 2.5em;
         color: white;
         font-weight: bold;
     }
@@ -470,13 +524,13 @@ img {
         background-color: rgba(0, 0, 0, .6);
         color: white;
         text-align: center;
-        padding: 1.5em;
+        padding: 2.5em;
         width: 700px;
-        height: 400px;
+        height: 450px;
         left: 50%;
         margin-left: -350px;
         top: 50%;
-        margin-top: -200px;
+        margin-top: -225px;
     }
 
     .catalogo__title {
@@ -545,6 +599,14 @@ img {
 
 @media screen and (min-width : 968px) {
 
+    .menu__big-links {
+        display: flex;
+    }
+
+    .menu__big-link {
+        padding: 0.5em;
+    }
+
     .above__container {
         height: 34em;
         background-position-y: center;
@@ -554,10 +616,30 @@ img {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5em;
+        transform: translate(-55%, -50%);
+        font-size: 3.25em;
         color: white;
         font-weight: bold;
+    }
+
+    .home__section-logo {
+        height: 145px;
+        margin-top: 5em;
+        margin-bottom: 1.5em;
+    }
+
+    .home__section-info {
+        width: 80%;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 22px;
+        margin-bottom: 1.5em;
+    }
+
+    .home__section-info2 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 2em;
     }
 
     .catalogo__info {
@@ -591,6 +673,81 @@ img {
 }
 
 @media screen and (min-width : 1200px) {
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        padding-top: 18em;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 0.8s all;
+        text-align: center;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 60px;
+        margin-left: 50px;
+        color: white;
+    }
+
+    .navbar__menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        height: 5em;
+    }
+
+    .navbar__icon {
+        width: 45%;
+        padding-top: 1.75em;
+        padding-right: 9em;
+        height: 5em;
+    }
+
+    .menu__big-link {
+        padding: 2.5em;
+    }
+
+    .home__section-logo {
+        height: 180px;
+        margin-top: 5.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .home__section-info {
+        width: 80%;
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 22px;
+        margin-bottom: 1.5em;
+    }
+
+    .home__section-info2 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 2em;
+    }
+
+    .above__container {
+        height: 41em;
+        background-position-y: center;
+    }
+
+    .above__info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -50%);
+        font-size: 4em;
+        color: white;
+        font-weight: bold;
+    }
+
     .burger__section {
         margin-bottom: 2em;
         position: relative;
@@ -617,9 +774,8 @@ img {
     .burguer__info {
         width: 50%;
         height: 100%;
-        display: block;
-        justify-content: center;
-        margin-top: 6em;
+        display: grid;
+        place-content: center;
     }
 
     .map__image {
@@ -628,5 +784,54 @@ img {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .catalogo__info {
+        position: absolute;
+        background-color: rgba(0, 0, 0, .6);
+        color: white;
+        text-align: center;
+        padding: 1.5em;
+        width: 1000px;
+        height: 400px;
+        left: 50%;
+        margin-left: -500px;
+        top: 50%;
+        margin-top: -200px;
+    }
+
+    .catalogo__title {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 2.25em;
+        text-align: center;
+    }
+
+    .catalogo__subtitle {
+        padding: 1em;
+        font-size: 1.4em;
+        line-height: 1.5em;
+        font-weight: 400;
+    }
+
+    .pedido__container {
+        width: 100%;
+        height: 80vh;
+        background-image: url(./assets/index8.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .pedido__info {
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, .6);
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 6em 2em;
     }
 }
