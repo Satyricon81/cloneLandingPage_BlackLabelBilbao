@@ -11,19 +11,9 @@ window.onscroll = function () { scrollNav() };
 function scrollNav() {
     if (document.documentElement.scrollTop > 150) {
         document.getElementById("myImg").className = "slide__up";
-        document.getElementById("navbar__responsive").className = "navbar__responsive"
+        document.getElementById("navbar__id").className = "navbar__responsive"
     } else {
         document.getElementById("myImg").className = "navbar__logo";
-        document.getElementById("navbar__responsive").className = "navbar__menu"
-    }
-}
-
-function scrollNav() {
-    if (document.documentElement.scrollTop > 350) {
-        document.getElementById("myImg").className = "slide__up";
-        document.getElementById("navbar__responsive").className = "navbar__responsive"
-    } else {
-        document.getElementById("myImg").className = "navbar__logo";
-        document.getElementById("navbar__responsive").className = "navbar__menu"
+        document.getElementById("navbar__id").className = "navbar__id"
     }
 }
