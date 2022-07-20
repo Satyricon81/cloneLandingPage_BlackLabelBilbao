@@ -14,6 +14,6 @@ function scrollNav() {
         document.getElementById("navbar__id").className = "navbar__responsive"
     } else {
         document.getElementById("myImg").className = "navbar__logo";
-        document.getElementById("navbar__id").className = "navbar__id"
+        document.getElementById("navbar__id").className = "navbar__id navbar__icon"
     }
 }
